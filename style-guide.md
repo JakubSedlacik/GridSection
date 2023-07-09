@@ -1,5 +1,9 @@
 # Front-end Style Guide
 
+-FlexBox
+-CSS Grid
+-mobile first
+
 ## Layout
 
 The designs were created to the following widths:
