@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 16px;
+}
+
+.main-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+  margin: 0 auto;
+}
+
+.little-card {
+  border: #f08c8c 2px solid;
+}
+
+.little-card:nth-of-type(1) {
+  grid-column: 1 / span 2;
+}
+
+.little-card:nth-of-type(4) {
+  grid-column: 2 / span 2;
+  background-color: #201d1d;
+}
+
+.little-card:nth-of-type(5) {
+  grid-row: 1 / span 2;
+  grid-column: 4;
+  background-color: #f08c8c;
+}
