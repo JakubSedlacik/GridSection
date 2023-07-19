@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Barlow+Semi+Condensed:wght@500;600&family=Nunito+Sans:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 1.35rem;
+  padding: 10px;
+}
+
+.container {
+  margin: 100px auto;
+  max-width: 1440px;
+  display: grid;
+}
+
+@media (min-width: 1100px) {
+  .container {
+    grid-template-areas:
+      "position-1 position-1 position-2 position-3"
+      "position-4 position-5 position-5 position-3";
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1099px) {
+  .container {
+    grid-template-areas:
+      "position-1 position-1 position-2"
+      "position-4 position-5 position-5"
+      "position-3 position-3 position-3";
+  }
+}
+
+@media (max-width: 779px) {
+  .container {
+    display: block;
+  }
+}
+
+.card {
+  position: relative;
+  padding: 40px;
+  margin: 12px;
+  border-radius: 10px;
+  box-shadow: rgba(8, 3, 27, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card-header__img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.card-header__text-minor {
+  opacity: 50%;
+}
+
+.card-quote {
+  font-size: x-large;
+  line-height: 1.8rem;
+  margin: 20px 0px;
+}
+
+.card-text {
+  opacity: 70%;
+}
+
+.bg-text {
+  position: absolute;
+  font-family: "Arimo";
+  font-size: 700px;
+  top: 12.5rem;
+  right: 15%;
+  opacity: 30%;
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-grey {
+  color: hsl(217, 19%, 35%);
+}
+
+.bg--purple {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.bg--light-blue {
+  background-color: aliceblue;
+}
+
+.bg--light-grey {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.bg--dark-grey {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.border--purple {
+  border-color: hsl(271, 58%, 61%);
+}
+
+.border--grey {
+  border-color: hsl(0, 0%, 81%);
+}
+
+.position-1 {
+  grid-area: position-1;
+}
+
+.position-2 {
+  grid-area: position-2;
+}
+
+.position-3 {
+  grid-area: position-3;
+}
+
+.position-4 {
+  grid-area: position-4;
+}
+
+.position-5 {
+  grid-area: position-5;
+}
